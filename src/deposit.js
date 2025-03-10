@@ -36,7 +36,7 @@ export default function Deposit() {
 
     try {
       // Sending only email and deposit amount (password is checked on frontend)
-      const response = await axios.post(`${api}/data/deposit`, {
+      const response = await axios.post(`${api}/deposit`, {
         email,
         password,
         amount: depositAmount,
